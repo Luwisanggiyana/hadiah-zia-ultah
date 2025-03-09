@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Zia! 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #d63384;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .hidden {
+            display: none;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #b82c6b;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 100px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selamat Ulang Tahun, Zia! 🎂🎉</h1>
+        <p>Hari ini spesial banget, karena ada seseorang yang paling cantik dan baik di dunia ini yang bertambah usia. 💖</p>
+        
+        <button onclick="showStep(1)">Lanjut Baca ➡</button>
+
+        <div id="step1" class="hidden">
+            <h2>🎁 Hadiah Pertama: Sebuah Gambar Spesial</h2>
+            <p>Sehat selalu ya cantik, jangan lupa senyum sayang Zia. 🌸❤️</p>
+            <img src="https://i.imgur.com/7wNfLER.jpg" alt="Bunga Cantik untuk Zia">
+            <button onclick="showStep(2)">Lanjut Baca ➡</button>
+        </div>
+
+        <div id="step2" class="hidden">
+            <h2>🎶 Hadiah Kedua: Lagu Spesial Untukmu</h2>
+            <p>Semoga lagu ini bikin hari ulang tahunmu makin berkesan. 🎶💕</p>
+            <iframe src="https://www.youtube.com/embed/hQ80-gCc7fE?autoplay=1" allow="autoplay"></iframe>
+            <button onclick="showStep(3)">Lanjut Baca ➡</button>
+        </div>
+
+        <div id="step3" class="hidden">
+            <h2>💌 Pantun Bucin Untuk Zia</h2>
+            <p>Bunga mawar merah merekah,  
+            Wanginya semerbak di dalam taman.  
+            Zia cantik sungguh indah,  
+            Sehat selalu dan penuh kebahagiaan. 💖</p>
+            <button onclick="showStep(4)">Lanjut Baca ➡</button>
+        </div>
+
+        <div id="step4" class="hidden">
+            <h2>🥰 Pesan Terakhir</h2>
+            <p>Zia, kamu bukan cuma spesial di hari ulang tahunmu.  
+            Kamu spesial setiap hari! ✨  
+            Tetap jadi Zia yang manis, baik, dan selalu bikin orang sekitar bahagia.  
+            Aku selalu di sini buatmu. 💕</p>
+            <h3>🎉 Happy Birthday, Sayang Zia! 🎉</h3>
+        </div>
+    </div>
+
+    <script>
+        function showStep(step) {
+            document.getElementById('step' + step).classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
+
